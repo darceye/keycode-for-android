@@ -1,5 +1,7 @@
-const fs = require("fs");
-const data = JSON.parse(fs.readFileSync("./keyeventhtml/data.json", "utf-8"));
+const fs = require("fs")
+const path = require('path')
+const datafile = path.join(path.dirname(__filename), 'data.json')
+const data = JSON.parse(fs.readFileSync(datafile, "utf-8"))
 
 function convert(key) {
   if (typeof key === "number") {
@@ -7,7 +9,6 @@ function convert(key) {
   } else if (!Number.isNaN(parseInt(key))) {
     return data.val2name[key];
   }
-  console.log(key)
   key = key.toUpperCase();
   var val = data.name2val[key];
   if (typeof(val) === 'undefined') {
