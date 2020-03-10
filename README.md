@@ -6,7 +6,7 @@ This module gives your the Android's.
 
 ## Usage
 
-```
+```js
 const keycode = require('keycode-for-android')
 
 // You can use a keycode name which is exactly the same as Google document.
