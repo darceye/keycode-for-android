@@ -1,6 +1,6 @@
 {
   "name": "keycode-for-android",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Return keycode for android. Could be useful for appium android test.",
   "main": "index.js",
   "scripts": {

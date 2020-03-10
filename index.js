@@ -11,9 +11,12 @@ function convert(key) {
   key = key.toUpperCase();
   var val = data.name2val[key];
   if (typeof(val) === 'undefined') {
-    return data.name2val["KEYCODE_" + key];
+    val = data.name2val["KEYCODE_" + key];
+    if(val === undefined){
+      return undefined
+    }
   }
-  return val;
+  return parseInt(val);
 }
 
 

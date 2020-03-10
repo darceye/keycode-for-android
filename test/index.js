@@ -13,15 +13,23 @@ describe("convert bewteen key and value ", function(){
     }) 
     
     it("search", function(){
-        expect(keycode('search')).to.be.equal('84')
+        expect(keycode('search')).to.be.equal(84)
     })
 
     it("keycode_search", function(){
-        expect(keycode('keycode_search')).to.be.equal('84')
+        expect(keycode('keycode_search')).to.be.equal(84)
     })
 
     it("KEYCODE_SEARCH", function(){
-        expect(keycode('KEYCODE_SEARCH')).to.be.equal('84')
+        expect(keycode('KEYCODE_SEARCH')).to.be.equal(84)
     })
+
+    it("KEYCODE_ENTER", function(){
+        expect(keycode('KEYCODE_ENTER')).to.be.equal(66)
+    })    
+    it("not exist", function(){
+        expect(keycode('not_exist')).to.be.equal(undefined)
+    })
+    
 
 })
