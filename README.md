@@ -7,7 +7,7 @@ Data from [Android KeyEvent](https://developer.android.com/reference/android/vie
 As you know, Android keycodes are different from PCs. For example, "Enter" keycode is 13 on PC but 66 on Android.
 This module gives your the Android's.
 
-## Usage
+## Usage 
 
 Install 'keycode-for-android' into your project:
 ```
